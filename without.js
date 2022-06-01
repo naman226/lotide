@@ -19,16 +19,16 @@ let assertArraysEqual = function(array1, array2) {
 };
 
 let without = function(source, eliminator) {
- let newArray = [];
+  let newArray = [];
   for (let i = 0; i < source.length; i++) {
-  if (!eliminator.includes(source[i])) {
-    newArray.push(source[i]);
- }
-}
-return newArray;
+    if (!eliminator.includes(source[i])) {
+      newArray.push(source[i]);
+    }
+  }
+  return newArray;
 };
 console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"])); 
+console.log(without(["1", "2", "3"], [1, 2, "3"]));
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]);
