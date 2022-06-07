@@ -10,13 +10,13 @@ let eqArrays = function(array1 , array2) {
   return true;
 };
 
-let assertArraysEqual = function(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log("✅✅ Arrays match");
-  } else {
-    console.log("🛑🛑 Arrays do not match");
-  }
-};
+// let assertArraysEqual = function(array1, array2) {
+//   if (eqArrays(array1, array2)) {
+//     console.log("✅✅ Arrays match");
+//   } else {
+//     console.log("🛑🛑 Arrays do not match");
+//   }
+// };
 
 let without = function(source, eliminator) {
   let newArray = [];
@@ -27,9 +27,11 @@ let without = function(source, eliminator) {
   }
   return newArray;
 };
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
+module.exports = without;
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// console.log(without([1, 2, 3], [1]));
+// console.log(without(["1", "2", "3"], [1, 2, "3"]));
+
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]);
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);
