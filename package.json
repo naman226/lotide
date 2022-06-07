@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@naman226/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of Lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/naman226/lotide-.git"
   },
-  "author": "Naman",
+  "author": "Naman Dhalla",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/naman226/lotide-/issues"
